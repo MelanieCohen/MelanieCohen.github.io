@@ -1,0 +1,144 @@
+<!--Portfolio Site V 1.0 -->
+<!-- Melanie Cohen -->
+<!-- For Educational Purposes -->
+<!-- About + Contact Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:description" content="| Melanie Cohen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/stars.png" alt="freelance illustrator designer vancouver icon"/>
+    <title>MC. Illustration</title>
+    <link rel="stylesheet" href="../portfolio site/styles_contact.css">
+    <link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css” media=”screen”>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+    
+<!-- &#9776; -->
+
+
+<h2><a href="landing page.html"><span class="bounce_button">MC.
+    <div class="stars"><img src="images/stars.png" alt="stars">
+    </div>
+</span>
+</a>
+</h2>
+
+        <button>Menu &#9776;</button>
+        
+        <nav>
+            <ul>
+                <li class="dropdown"><a href="#0"><a class="cool-link">About + Contact</a></li>
+                <li class="dropdown"><a href="#0"><a class="cool-link">Illustration</a>
+                <li class="dropdown"><a href="#0"><a class="cool-link">Editorial</a>
+                <li class="dropdown"><a href="/sketchbook/"><a class="cool-link">Sketchbook</a>
+            </ul>
+        </nav>     
+
+    </header>
+
+<div class="container">
+<div class="news">
+<h4 class="latest">Latest: Dungeons and Dragons Starter Pack Vol.1</h4>
+<h5 class="latest">Coming Soon: Shop, Vol.2, Tarot Suite, Magnets + More</h5>
+</div>
+
+<div class="banner">
+              <div class="bodynav social-links">
+                   <ul>
+                        <li>
+                            <a href="#" class="facebook">
+                                <i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter">
+                                <i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="behance">
+                                <i class="fa fa-behance" aria-hidden="true" title="Behance"></i>
+                                <span class="sr-only">Pinterest</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram">
+                                <i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+<br>
+
+<main>
+              <div class="box box1">
+             
+                           <img src="perimages/mel.png" alt="artist">
+              </div><!-- end box 1 -->
+
+              <div class="box box2">
+              
+                          <h6>About the Artist</h6>
+              
+                          <p class="description">Hi there !!! I'm an illustrator living and working out of Vancouver, BC and (occasionally) Durban, SA. I Enjoy tea, cartoons, Godzilla, and spend too much time with my cat. My primary focus is on children's books and media, and my practice is informed by nostalgia, memory, and my own childhood, as well as shape, form and contemporary toy design. I am a recent graduate of Emily Carr University of Art + Design with a major in illustration and print.</p>
+
+                          <div class="email"><img src="perimages/email.png" alt="email"></div>
+              </div><!-- end box2 -->
+</main>
+              
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+ <script src="../portfolio site/portfolio.js"></script>
+<script>
+const $body = $('body')
+const $btn = $('button');
+const $nav = $('nav');
+
+$btn.click(function(){
+    $body.toggleClass('show-nav');  
+});
+
+// The following JS modified from 
+// JS found at this per: http://codepen.io/laviperchik/pen/dlcBt
+$.fn.accessibleDropDown = function () {
+    
+    var el = $(this);
+
+    /* Make dropdown menus keyboard accessible */
+
+    el.find('a').focus(function() {
+        $(this).parents("li").addClass("hover");
+    }).blur(function() {
+        $(this).parents("li").removeClass("hover");
+    });
+
+}
+
+$nav.accessibleDropDown();
+</script>
+
+<footer>
+         <p>&copy; 2017 | Melanie Cohen Illustration</p>
+
+    </footer>
+</div><!-- end wrapper -->
+
+</body>
+</html>
